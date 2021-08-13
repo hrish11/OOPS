@@ -41,14 +41,18 @@ namespace UnderstandingInheritance
         {
             Employee e1 = new Employee();
             e1.Salary = 11200.532;
+
             Sales_Employee e2 = new Sales_Employee();
             e2.Salary = 400;
             e2.Get_Salary();
+
             Employee e3 = new Sales_Employee();
             e3.Salary = 232.453;
+
             Tech_Employee e4 = new Tech_Employee();
             e4.Salary = 32132.42;
             e4.Get_Salary();
+
             Console.ReadKey();
         }
     }
