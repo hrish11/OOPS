@@ -29,6 +29,7 @@ namespace UnderstandingSealedClass
         Test5 test5 = new Test5();
     }
 
+
     static class Test6
     {
         //  public int Test6_Property { get; set; } Compiletime_Error: Cannot declare instance member in static class

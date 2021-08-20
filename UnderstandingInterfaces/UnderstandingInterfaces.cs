@@ -8,7 +8,7 @@ namespace UnderstandingInterfaces
 {
     interface first
     {
-        void run();
+       void run();
 
     }
     interface second
