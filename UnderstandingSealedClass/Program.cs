@@ -30,15 +30,23 @@ namespace UnderstandingSealedClass
     }
 
 
+    /// <summary>
+    /// Static class is used for extension method, so we can access method inside the static class using reference of the class being passed as parameter
+    /// </summary>
     static class Test6
     {
+
+        public static void method_name (this Test3 t3)
+        {
+            Console.WriteLine("Extension method example");
+        }
         //  public int Test6_Property { get; set; } Compiletime_Error: Cannot declare instance member in static class
-    //    Test1 test1 = new Test1();
-     //   Test2 test2 = new Test2();
-    //    Test3 test3 = new Test3();
-    //    Test4 test4 = new Test4();
-     //   Test5 test5 = new Test5();
-      //  Test7 test7 = new Test7(); // Cannot create instance of static class even though it iself is an static class
+        //    Test1 test1 = new Test1();
+        //   Test2 test2 = new Test2();
+        //    Test3 test3 = new Test3();
+        //    Test4 test4 = new Test4();
+        //   Test5 test5 = new Test5();
+        //  Test7 test7 = new Test7(); // Cannot create instance of static class even though it iself is an static class
     }
     static class Test7
     {
@@ -97,6 +105,7 @@ namespace UnderstandingSealedClass
             Test1 test1 = new Test1();
             Test2 test2 = new Test2();
             Test3 test3 = new Test3();
+            test3.method_name();
             Test4 test4 = new Test4();
             Test5 test5 = new Test5();
          //   Test6 test6 = new Test6();
